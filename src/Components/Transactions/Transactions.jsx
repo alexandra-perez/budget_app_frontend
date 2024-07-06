@@ -5,6 +5,7 @@ import './Transactions.scss';
 const API = import.meta.env.VITE_API_URL;
 
 export default function Transactions() {
+  let balance = 5;
   const [transactions, setTransactions] = useState([]);
 
   useEffect(() => {
@@ -31,11 +32,15 @@ export default function Transactions() {
           </tr>
         </thead>
         <tbody>
-          {transactions.map((transaction) => (
-            <Transaction key={transaction.id} transaction={transaction} />
-          ))}
+          {transactions.map((transaction) => {
+            <Transaction key={transaction.id} transaction={transaction} />;
+            // balance += transaction.amount;
+          })}
         </tbody>
       </table>
+      <div className={`balance ${balance >= 0 && balance < 100 ? `yellow` : `red`}`}>
+        <h1>Total balance: ${balance}</h1>
+      </div>
     </div>
   );
 }

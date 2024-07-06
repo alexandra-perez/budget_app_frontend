@@ -29,8 +29,9 @@ export default function CreateForm() {
         'Content-Type': 'application/json',
       },
     })
-      .then(() => {
-        navigate('/transactions');
+      .then(res => res.json())
+      .then(data => {
+         navigate(`/transactions/${data.id}`);
       })
       .catch((error) => console.error(error));
   }
