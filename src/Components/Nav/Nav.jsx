@@ -11,7 +11,9 @@ export default function Nav() {
         <Link to="/transactions">
           <li>My Transactions</li>
         </Link>
-        <li>Add New Transaction</li>
+        <Link to="/new">
+          <li>Add New Transaction</li>
+        </Link>
       </ul>
     </nav>
   );

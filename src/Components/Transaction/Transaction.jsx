@@ -1,13 +1,30 @@
+import { Link } from 'react-router-dom';
 import './Transaction.scss';
+
+const API = import.meta.env.VITE_API_URL;
 
 export default function Transaction({ transaction }) {
   return (
     <tr className="Transaction">
-      <td>{transaction.item_name}</td>
-      <td>{transaction.category}</td>
-      <td>{transaction.from}</td>
-      <td>{transaction.amount}</td>
-      <td>{transaction.date}</td>
+      <td>
+        <Link to={`/transaction/${transaction.id}`}>
+          {transaction.item_name}
+        </Link>
+      </td>
+      <td>
+        <Link to={`/transaction/${transaction.id}`}>
+          {transaction.category}
+        </Link>
+      </td>
+      <td>
+        <Link to={`/transaction/${transaction.id}`}>{transaction.from}</Link>
+      </td>
+      <td>
+        <Link to={`/transaction/${transaction.id}`}>{transaction.amount}</Link>
+      </td>
+      <td>
+        <Link to={`/transaction/${transaction.id}`}>{transaction.date}</Link>
+      </td>
     </tr>
   );
 }
