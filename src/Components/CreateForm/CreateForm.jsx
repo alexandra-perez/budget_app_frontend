@@ -29,9 +29,9 @@ export default function CreateForm() {
         'Content-Type': 'application/json',
       },
     })
-      .then(res => res.json())
-      .then(data => {
-         navigate(`/transactions/${data.id}`);
+      .then((res) => res.json())
+      .then((data) => {
+        navigate(`/transactions/${data.id}`);
       })
       .catch((error) => console.error(error));
   }
@@ -58,7 +58,8 @@ export default function CreateForm() {
             type="category"
             value={currTransaction.category}
             onChange={handleTextChange}
-            // required
+            required
+            autoComplete="off"
           />
         </div>
         <div>
@@ -68,7 +69,8 @@ export default function CreateForm() {
             type="text"
             value={currTransaction.item_name}
             onChange={handleTextChange}
-            // required
+            required
+            autoComplete="off"
           />
         </div>
         <div>
@@ -78,7 +80,8 @@ export default function CreateForm() {
             type="from"
             value={currTransaction.from}
             onChange={handleTextChange}
-            // required
+            required
+            autoComplete="off"
           />
         </div>
         <div>
@@ -88,7 +91,8 @@ export default function CreateForm() {
             type="number"
             value={currTransaction.amount}
             onChange={handleTextChange}
-            // required
+            required
+            autoComplete="off"
           />
         </div>
         <div>
@@ -98,10 +102,11 @@ export default function CreateForm() {
             type="date"
             value={currTransaction.date}
             onChange={handleTextChange}
-            // required
+            required
+            autoComplete="off"
           />
         </div>
-        <input type="submit" value="Submit" />
+        <button onClick={handleSubmit}>Submit</button>
       </form>
     </div>
   );

@@ -114,7 +114,7 @@ export default function EditForm() {
             // required
           />
         </div>
-        <input type="submit" value="Submit" />
+        <button onClick={handleSubmit}>Submit</button>
       </form>
     </div>
   );

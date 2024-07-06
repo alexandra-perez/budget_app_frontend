@@ -1,0 +1,12 @@
+.Footer {
+    padding: 30px;
+    background: #393e46;
+    color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+
+    ul {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+    }
+}

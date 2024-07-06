@@ -53,10 +53,12 @@ export default function TransactionDetails() {
         <p>{currTransaction.date}</p>
         <p>${currTransaction.amount}</p>
       </div>
-      <Link to={`/transactions/${id}/edit`}>
-        <button>Edit</button>
-      </Link>
-      <button onClick={deleteTransaction}>Delete</button>
+      <div className="buttons">
+        <Link to={`/transactions/${id}/edit`}>
+          <button>Edit</button>
+        </Link>
+        <button onClick={deleteTransaction}>Delete</button>
+      </div>
     </div>
   );
 }

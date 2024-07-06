@@ -1,4 +1,22 @@
 .Home {
-    padding: 40px;
+    display: flex;
+    flex-direction: column;
     text-align: center;
+    justify-content: center;
+    height: 80vh;
+
+
+    h1 {
+        font-size: 24px;
+        font-weight: normal;
+    }
+
+    svg {
+        display: block;
+        margin: 0 auto;
+    }
+
+    p {
+        color: #4e535c
+    }
 }

@@ -1,9 +1,15 @@
 .TransactionDetails {
     padding: 30px;
+    height: 80vh;
 
     .details {
         display: flex;
         gap: 30px;
     }
 
+    .buttons {
+        display: flex;
+        padding: 10px 0px;
+        gap: 15px;
+    }
 }

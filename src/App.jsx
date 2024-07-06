@@ -12,7 +12,7 @@ import NotFound from './Pages/NotFound/NotFound';
 
 // Components
 import Nav from './Components/Nav/Nav';
-
+import Footer from './Components/Footer/Footer';
 
 const API = import.meta.env.VITE_API_URL;
 
@@ -29,6 +29,7 @@ function App() {
           <Route path="/transactions/:id/edit" element={<Edit />} />
           <Route path="/*" element={<NotFound />} />
         </Routes>
+        <Footer/>
       </Router>
     </>
   );

@@ -2,10 +2,11 @@
     display: flex;
     flex-direction: column;
     padding: 20px 60px;
+    height: 80vh;
 
-    tr,
+
     th {
-        border: 1px solid grey;
+        background-color: #F1F2E0;
     }
 
     .balance {
