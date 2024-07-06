@@ -3,7 +3,7 @@ import './Transaction.scss';
 
 const API = import.meta.env.VITE_API_URL;
 
-export default function Transaction({ transaction }) {
+export default function Transaction({ transaction, balance }) {
   return (
     <tr className="Transaction">
       <td>
@@ -24,6 +24,9 @@ export default function Transaction({ transaction }) {
       </td>
       <td>
         <Link to={`/transactions/${transaction.id}`}>{transaction.date}</Link>
+      </td>
+      <td>
+        <Link to={`/transactions/${transaction.id}`}>{balance}</Link>
       </td>
     </tr>
   );
