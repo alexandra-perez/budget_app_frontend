@@ -56,7 +56,7 @@ export default function EditForm() {
       },
     })
       .then(() => {
-        navigate('/transactions');
+        navigate(`/transactions/${id}`);
       })
       .catch((error) => console.error(error));
   }
