@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useParams, useNavigate, Link } from 'react-router-dom';
-import "./TransactionDetails.scss";
+import './TransactionDetails.scss';
 
 export default function TransactionDetails() {
   const [currTransaction, setCurrTransaction] = useState({
@@ -16,13 +16,14 @@ export default function TransactionDetails() {
 
   const API = import.meta.env.VITE_API_URL;
 
+
   useEffect(() => {
     fetch(`${API}/transactions/${id}`)
       .then((res) => {
         return res.json();
       })
       .then((resJSON) => {
-        console.log(resJSON);
+        // console.log(resJSON);
         setCurrTransaction(resJSON);
       })
       .catch(() => {
@@ -39,6 +40,9 @@ export default function TransactionDetails() {
         <p>{currTransaction.date}</p>
         <p>${currTransaction.amount}</p>
       </div>
+      <Link to={`/transactions/${id}/edit`}>
+        <button>Edit</button>
+      </Link>
     </div>
   );
 }

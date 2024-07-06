@@ -7,6 +7,7 @@ import Home from './Pages/Home/Home';
 import Index from './Pages/Index/Index';
 import Show from './Pages/Show/Show';
 import New from './Pages/New/New';
+import Edit from './Pages/Edit/Edit';
 
 // Components
 import Nav from './Components/Nav/Nav';
@@ -30,8 +31,9 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/transactions" element={<Index />} />
-          <Route path="/transaction/:id" element={<Show />} />
+          <Route path="/transactions/:id" element={<Show />} />
           <Route path="/new" element={<New />} />
+          <Route path="/transactions/:id/edit" element={<Edit />} />
         </Routes>
       </Router>
     </>

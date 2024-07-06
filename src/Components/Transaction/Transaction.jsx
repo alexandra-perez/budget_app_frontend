@@ -7,23 +7,23 @@ export default function Transaction({ transaction }) {
   return (
     <tr className="Transaction">
       <td>
-        <Link to={`/transaction/${transaction.id}`}>
+        <Link to={`/transactions/${transaction.id}`}>
           {transaction.item_name}
         </Link>
       </td>
       <td>
-        <Link to={`/transaction/${transaction.id}`}>
+        <Link to={`/transactions/${transaction.id}`}>
           {transaction.category}
         </Link>
       </td>
       <td>
-        <Link to={`/transaction/${transaction.id}`}>{transaction.from}</Link>
+        <Link to={`/transactions/${transaction.id}`}>{transaction.from}</Link>
       </td>
       <td>
-        <Link to={`/transaction/${transaction.id}`}>{transaction.amount}</Link>
+        <Link to={`/transactions/${transaction.id}`}>{transaction.amount}</Link>
       </td>
       <td>
-        <Link to={`/transaction/${transaction.id}`}>{transaction.date}</Link>
+        <Link to={`/transactions/${transaction.id}`}>{transaction.date}</Link>
       </td>
     </tr>
   );

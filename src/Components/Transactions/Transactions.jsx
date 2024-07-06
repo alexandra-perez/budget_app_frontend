@@ -13,7 +13,7 @@ export default function Transactions() {
         return res.json();
       })
       .then((resJSON) => {
-        console.log(resJSON);
+        // console.log(resJSON);
         setTransactions(resJSON);
       });
   }, []);
