@@ -28,6 +28,8 @@ export default function Nav() {
         <Link to="/new">
           <li>Add New Transaction</li>
         </Link>
+        <Link to="/profile">
+        <li>Profile</li></Link>
       </ul>
     </nav>
   );

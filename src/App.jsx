@@ -8,6 +8,7 @@ import Index from './Pages/Index/Index';
 import Show from './Pages/Show/Show';
 import New from './Pages/New/New';
 import Edit from './Pages/Edit/Edit';
+import Profile from './Components/Profile/Profile';
 import NotFound from './Pages/NotFound/NotFound';
 
 // Components
@@ -27,9 +28,10 @@ function App() {
           <Route path="/transactions/:id" element={<Show />} />
           <Route path="/new" element={<New />} />
           <Route path="/transactions/:id/edit" element={<Edit />} />
+          <Route path="/profile" element={<Profile />} />
           <Route path="/*" element={<NotFound />} />
         </Routes>
-        <Footer/>
+        <Footer />
       </Router>
     </>
   );

@@ -21,13 +21,11 @@ export default function Footer() {
         <li>
           <h1>About</h1>
           <p>
-            <p>
-              BudgetBuddy is a comprehensive full stack React application,
-              developed using Express and Vite, designed to manage your budget
-              and transactions with ease. It supports full CRUD operations,
-              providing a seamless and efficient way to track and control your
-              financial activities.
-            </p>
+            BudgetBuddy is a comprehensive full stack React application,
+            developed using Express and Vite, designed to manage your budget and
+            transactions with ease. It supports full CRUD operations, providing
+            a seamless and efficient way to track and control your financial
+            activities.
           </p>
         </li>
         {/* Contact */}
@@ -37,16 +35,16 @@ export default function Footer() {
             <p>Alexandra Perez</p>
             <p>Full Stack Developer</p>
             <a href="https://github.com/alexandra-perez" target="_blank">
-              <i class="fa-brands fa-github"></i>
+              <i className="fa-brands fa-github"></i>
             </a>
             <a
               href="https://www.linkedin.com/in/ap-alexandraperez/"
               target="_blank"
             >
-              <i class="fa-brands fa-linkedin-in"></i>
+              <i className="fa-brands fa-linkedin-in"></i>
             </a>
             <a href="mailto:alexandraperezny@gmail.com">
-              <i class="fa-solid fa-at"></i>
+              <i className="fa-solid fa-at"></i>
             </a>
           </div>
         </li>
