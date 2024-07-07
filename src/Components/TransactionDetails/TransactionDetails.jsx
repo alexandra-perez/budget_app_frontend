@@ -48,14 +48,16 @@ export default function TransactionDetails() {
     <div className="TransactionDetails">
       <h1>{currTransaction.item_name}</h1>
       <div className="details">
-        <p>{currTransaction.from}</p>
-        <p>{currTransaction.category}</p>
-        <p>{currTransaction.date}</p>
-        <p>${currTransaction.amount}</p>
+        <p>
+          <strong>{currTransaction.from}</strong>
+        </p>
+        <p className='detail'>{currTransaction.category}</p>
+        <p className='detail'>{currTransaction.date}</p>
+        <p><strong>${parseFloat(currTransaction.amount).toFixed(2)}</strong></p>
       </div>
       <div className="buttons">
         <Link to={`/transactions/${id}/edit`}>
-          <button>Edit</button>
+          <button>Edit Transaction</button>
         </Link>
         <button onClick={deleteTransaction}>Delete</button>
       </div>
