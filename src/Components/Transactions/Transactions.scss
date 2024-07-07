@@ -6,14 +6,20 @@
 
     th {
         background-color: #c7ceda;
-        ;
+        text-align: left;
+        font-weight: 500;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    }
+
+    tr {
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
     }
 
     .balance {
         text-align: right;
         padding: 30px 0px;
-        color: green;
-        ;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+        padding: 5px 10px;
         bottom: 0;
     }
 
@@ -23,5 +29,9 @@
 
     .red {
         color: red;
+    }
+
+    .green {
+        color: green;
     }
 }

@@ -47,7 +47,7 @@ export default function Transactions() {
       </table>
       <div
         className={`balance ${
-          balance >= 0 && balance < 100 ? `yellow` : `red`
+          balance > 100 ? 'green' : balance >= 0 ? 'yellow' : 'red'
         }`}
       >
         <h1>Total Balance: ${balance}</h1>
