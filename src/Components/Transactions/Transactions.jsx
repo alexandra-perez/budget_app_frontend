@@ -34,7 +34,7 @@ export default function Transactions() {
         </thead>
         <tbody>
           {transactions.map((transaction) => {
-            balance += transaction.amount;
+            balance += parseInt(transaction.amount);
             return (
               <Transaction
                 key={transaction.id}
@@ -50,7 +50,7 @@ export default function Transactions() {
           balance > 100 ? 'green' : balance >= 0 ? 'yellow' : 'red'
         }`}
       >
-        <h1>Total Balance: ${balance}</h1>
+        <h1>Available Balance: ${balance.toFixed(2)}</h1>
       </div>
     </div>
   );

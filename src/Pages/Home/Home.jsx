@@ -1,6 +1,7 @@
 import './Home.scss';
 
 export default function Home() {
+  // Set Date and Time
   const now = new Date();
   const dateOptions = {
     month: 'long',
