@@ -20,7 +20,7 @@ export default function Transaction({ transaction, balance }) {
         <Link to={`/transactions/${transaction.id}`}>{transaction.from}</Link>
       </td>
       <td>
-        <Link to={`/transactions/${transaction.id}`}>{transaction.amount}</Link>
+        <Link to={`/transactions/${transaction.id}`}>{transaction.amount.toFixed(2)}</Link>
       </td>
       <td>
         <Link to={`/transactions/${transaction.id}`}>{transaction.date}</Link>

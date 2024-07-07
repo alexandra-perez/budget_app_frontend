@@ -35,11 +35,21 @@ export default function Transactions() {
         <tbody>
           {transactions.map((transaction) => {
             balance += transaction.amount;
-            return <Transaction key={transaction.id} transaction={transaction} balance={balance} />;
+            return (
+              <Transaction
+                key={transaction.id}
+                transaction={transaction}
+                balance={balance}
+              />
+            );
           })}
         </tbody>
       </table>
-      <div className={`balance ${balance >= 0 && balance < 100 ? `yellow` : `red`}`}>
+      <div
+        className={`balance ${
+          balance >= 0 && balance < 100 ? `yellow` : `red`
+        }`}
+      >
         <h1>Total Balance: ${balance}</h1>
       </div>
     </div>

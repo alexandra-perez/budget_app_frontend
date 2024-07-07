@@ -121,4 +121,8 @@ button:hover {
 input {
   display: block;
   width: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.16);
+  border-radius: 5px;
+    /* box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px; */
+
 }
