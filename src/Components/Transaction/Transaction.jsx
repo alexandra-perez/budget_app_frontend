@@ -20,13 +20,17 @@ export default function Transaction({ transaction, balance }) {
         <Link to={`/transactions/${transaction.id}`}>{transaction.from}</Link>
       </td>
       <td>
-        <Link to={`/transactions/${transaction.id}`}>${parseFloat(transaction.amount).toFixed(2)}</Link>
+        <Link to={`/transactions/${transaction.id}`}>
+          ${parseFloat(transaction.amount).toFixed(2)}
+        </Link>
       </td>
       <td>
         <Link to={`/transactions/${transaction.id}`}>{transaction.date}</Link>
       </td>
-      <td className='right'>
-         <Link to={`/transactions/${transaction.id}`}>${parseFloat(balance).toFixed(2)}</Link>
+      <td className="right">
+        <Link to={`/transactions/${transaction.id}`}>
+          ${parseFloat(balance).toFixed(2)}
+        </Link>
       </td>
     </tr>
   );

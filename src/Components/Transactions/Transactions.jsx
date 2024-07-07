@@ -26,7 +26,7 @@ export default function Transactions() {
       <table>
         <thead>
           <tr>
-            <th>Item Name</th>
+            <th>Transaction</th>
             <th>Category</th>
             <th>Merchant</th>
             <th>Amount</th>
