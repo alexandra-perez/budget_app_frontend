@@ -1,5 +1,10 @@
 import EditForm from '../../Components/EditForm/EditForm';
+import './Edit.scss';
 
 export default function Edit() {
-  return <EditForm />;
+  return (
+    <div className="Edit">
+      <EditForm />
+    </div>
+  );
 }

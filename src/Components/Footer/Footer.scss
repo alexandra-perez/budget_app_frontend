@@ -1,7 +1,7 @@
 @import '../../variables.scss';
 
 .Footer {
-    padding: 40px 60px;
+    padding: 2rem 5rem;
     background: $secondaryColor;
     color: $accentTextColor;
     box-shadow: $boxShadow;
@@ -14,7 +14,7 @@
     ul {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        column-gap: 40px;
+        column-gap: 3rem;
     }
 
     li {
