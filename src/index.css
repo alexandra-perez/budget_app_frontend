@@ -1,3 +1,4 @@
+/* CSS RESET */
 html,
 body,
 div,
@@ -87,6 +88,11 @@ main {
   font-size: 100%;
 }
 
+body {
+  scroll-behavior: smooth;
+}
+
+/* LINKS */
 ul {
   list-style-type: none;
 }
@@ -96,14 +102,7 @@ a:any-link {
   color: inherit;
 }
 
-body {
-  scroll-behavior: smooth;
-}
-
-label {
-  font-weight: 700;
-}
-
+/* BUTTONS */
 button {
   padding: 10px 15px;
   border: none;
@@ -118,6 +117,7 @@ button:hover {
   cursor: pointer;
 }
 
+/* FORMS */
 form {
   line-height: 2rem;
 }
@@ -135,15 +135,19 @@ legend {
   font-weight: 500;
 }
 
-input {
+input,
+select {
   display: block;
   width: 50%;
   border: 1px solid rgba(0, 0, 0, 0.16);
   border-radius: 5px;
-  /* box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px; */
+}
+
+input {
+  width: 25%;
 }
 
 hr {
-  border: 0.5px solid #6b727e;
+  border: 1px solid #0192ca;
   margin: 20px 0px;
 }

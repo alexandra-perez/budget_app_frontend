@@ -53,14 +53,26 @@ export default function CreateForm() {
       <form onSubmit={handleSubmit}>
         <div>
           <label htmlFor="category">Category</label>
-          <input
+          <select
             id="category"
-            type="category"
-            value={currTransaction.category}
+            name="category"
             onChange={handleTextChange}
-            required
-            autoComplete="off"
-          />
+            // required
+          >
+            <option value="">Select a category</option>
+            <option value="Utilities">Utilities</option>
+            <option value="Groceries">Groceries</option>
+            <option value="Gas">Gas</option>
+            <option value="Savings">Savings</option>
+            <option value="Entertainment">Entertainment</option>
+            <option value="Dining">Dining</option>
+            <option value="Healthcare">Healthcare</option>
+            <option value="Insurance">Insurance</option>
+            <option value="Travel">Travel</option>
+            <option value="Education">Education</option>
+            <option value="Personal Care">Personal Care</option>
+            <option value="Miscellaneous">Miscellaneous</option>
+          </select>
         </div>
         <div>
           <label htmlFor="item_name">Transaction Name</label>
