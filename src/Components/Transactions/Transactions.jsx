@@ -36,7 +36,7 @@ export default function Transactions() {
         </thead>
         <tbody>
           {transactions.map((transaction) => {
-            balance += parseInt(transaction.amount);
+            balance += parseFloat(transaction.amount);
             return (
               <Transaction
                 key={transaction.id}
