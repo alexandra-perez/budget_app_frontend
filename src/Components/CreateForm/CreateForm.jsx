@@ -60,18 +60,18 @@ export default function CreateForm() {
             required
           >
             <option value="">Select a category</option>
-            <option value="Utilities">Utilities</option>
-            <option value="Groceries">Groceries</option>
-            <option value="Gas">Gas</option>
-            <option value="Savings">Savings</option>
-            <option value="Entertainment">Entertainment</option>
             <option value="Dining">Dining</option>
+            <option value="Education">Education</option>
+            <option value="Entertainment">Entertainment</option>
+            <option value="Groceries">Groceries</option>
             <option value="Healthcare">Healthcare</option>
             <option value="Insurance">Insurance</option>
-            <option value="Travel">Travel</option>
-            <option value="Education">Education</option>
-            <option value="Personal Care">Personal Care</option>
             <option value="Miscellaneous">Miscellaneous</option>
+            <option value="Personal Care">Personal Care</option>
+            <option value="Savings">Savings</option>
+            <option value="Transportation">Transportation</option>
+            <option value="Travel">Travel</option>
+            <option value="Utilities">Utilities</option>
           </select>
         </div>
         <div>
@@ -118,7 +118,7 @@ export default function CreateForm() {
             autoComplete="off"
           />
         </div>
-        <button type='submit'>Submit</button>
+        <button type="submit">Submit</button>
       </form>
     </div>
   );
