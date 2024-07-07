@@ -1,12 +1,47 @@
 .Footer {
-    padding: 30px;
+    padding: 40px 50px;
     background: #393e46;
     color: #fff;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 
-    ul {
-        display: flex;
-        justify-content: space-between;
-        padding: 20px;
+    .logo {
+        text-align: center;
+        margin: 20px 0px;
     }
+
+    hr {
+        border: 0.5px solid #6b727e;
+    }
+
+    ul {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 20px;
+    }
+
+    li {
+        margin-bottom: 1rem;
+
+        h1 {
+            font-weight: 700;
+        }
+
+        p,
+        i {
+            color: #6b727e;
+        }
+
+        a:hover,
+        i:hover {
+            color: #fff;
+        }
+
+    }
+
+    .icons {
+        i {
+            margin-right: 10px;
+        }
+    }
+
 }

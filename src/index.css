@@ -108,13 +108,13 @@ button {
   padding: 10px 15px;
   border: none;
   border-radius: 5px;
-  background: #4e535c;
+  background: #0092ca;
   color: #fff;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 
 button:hover {
-  background: #0092ca;
+  background: #4e535c;
   cursor: pointer;
 }
 
