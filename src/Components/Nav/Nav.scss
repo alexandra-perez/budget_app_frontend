@@ -1,5 +1,5 @@
 .Nav {
-    padding: 30px 50px;
+    padding: 40px 50px;
     background: #0092ca;
     color: #fff;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
@@ -15,5 +15,10 @@
         align-items: center;
         justify-content: center;
         font-weight: 500;
+    }
+
+   li:hover {
+        text-decoration: underline;
+        text-underline-offset: 10px;
     }
 }
