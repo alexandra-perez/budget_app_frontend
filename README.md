@@ -22,7 +22,7 @@ Check out the live demo [here](https://getbudgetbuddy.netlify.app/).
 - **Category Visualization:** Visualize transactions by category.
 
 ## Technologies Used
-[![Technologies Used](https://skillicons.dev/icons?i=react,vite,express,js,html,css,sass&theme=dark)](https://skillicons.dev)
+[![Technologies Used](https://skillicons.dev/icons?i=react,vite,express,js,html,css,sass&theme=dark)](https://skillicons.dev){:target="_blank"}
 
 ## Setup
 To set up the project locally, follow these steps:
