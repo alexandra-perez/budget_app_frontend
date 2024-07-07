@@ -23,4 +23,36 @@
         text-decoration: underline;
         text-underline-offset: 10px;
     }
+
+    .mobile_nav {
+        // display: none;
+        text-align: right;
+    }
+
+    .hidden {
+        display: none;
+    }
+
+    .visible {
+        display: block;
+    }
+
+    @media (max-width: 480px) {
+        .desktop_nav {
+            display: none;
+        }
+
+        .mobile_nav {
+            display: flex;
+        }
+
+        .dropdown ul {
+            flex-direction: column;
+        }
+
+        li:hover {
+            text-decoration: underline;
+            text-underline-offset: 5px;
+        }
+    }
 }
