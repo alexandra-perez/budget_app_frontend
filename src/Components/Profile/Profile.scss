@@ -1,5 +1,6 @@
+@import '../../variables.scss';
+
 .Profile {
-    height: 80vh;
     padding: 30px;
 
     h1 {
@@ -23,7 +24,7 @@
     }
 
     hr {
-        border: 1px solid #0192CA;
+        border: 1px solid $primaryColor;
     }
 
     input {

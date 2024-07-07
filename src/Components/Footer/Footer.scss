@@ -1,8 +1,10 @@
+@import '../../variables.scss';
+
 .Footer {
     padding: 40px 60px;
-    background: #393e46;
-    color: #fff;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    background: $secondaryColor;
+    color: $accentTextColor;
+    box-shadow: $boxShadow;
 
     .logo {
         text-align: center;
@@ -24,12 +26,12 @@
 
         p,
         i {
-            color: #6b727e;
+            color: $accentColor;
         }
 
         a:hover,
         i:hover {
-            color: #0192ca;
+            color: $primaryColor;
         }
 
     }

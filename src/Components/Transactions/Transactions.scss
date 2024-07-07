@@ -1,22 +1,24 @@
+@import '../../variables.scss';
+
 .Transactions {
     display: flex;
     flex-direction: column;
     padding: 20px 60px;
-    height: 80vh;
 
     th {
-        background-color: #c7ceda;
+        background-color: $accentColor;
+        color: $accentTextColor;
         text-align: left;
         font-weight: 500;
-        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+        box-shadow: $boxShadow;
     }
 
     tr {
-        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+        box-shadow: $boxShadow;
     }
 
-    td {
-        padding: 5px;
+    th, td {
+        padding: 5px 10px;
     }
 
     .data {
@@ -31,7 +33,7 @@
     .balance {
         text-align: right;
         padding: 5px;
-        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+        box-shadow: $boxShadow;
         bottom: 0;
         font-weight: 500;
     }

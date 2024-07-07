@@ -1,9 +1,11 @@
+@import '../../variables.scss';
+
 .Transaction {
     table {
-        border: 1px solid grey;
+        border: 1px solid $accentColor;
     }
 
     .right {
-text-align: right;
+        text-align: right;
     }
 }
