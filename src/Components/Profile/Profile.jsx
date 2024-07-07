@@ -1,14 +1,7 @@
 import { useState } from 'react';
 import './Profile.scss';
 
-export default function Profile() {
-  const [user, setUser] = useState({
-    name: '',
-    email: '',
-    monthlyBudget: 0,
-    monthlyIncome: 0,
-  });
-
+export default function Profile({ user, setUser }) {
   function handleTextChange(e) {
     setUser({ ...user, [e.target.id]: e.target.value });
   }
@@ -25,13 +18,23 @@ export default function Profile() {
         <fieldset>
           <legend>Personal Settings</legend>
           <hr />
-          <label htmlFor="name">Name</label>
+          <label htmlFor="name">First Name</label>
           <input
             type="text"
-            name="name"
-            id="name"
-            placeholder="John Doe"
-            autoComplete="off"
+            name="firstName"
+            id="firstName"
+            placeholder="John"
+            // autoComplete="off"
+            onChange={handleTextChange}
+            value={user.name}
+          />
+          <label htmlFor="name">Last Name</label>
+          <input
+            type="text"
+            name="lastName"
+            id="lastName"
+            placeholder="Doe"
+            // autoComplete="off"
             onChange={handleTextChange}
             value={user.name}
           />
@@ -41,7 +44,7 @@ export default function Profile() {
             name="email"
             id="email"
             placeholder="johndoe@example.com"
-            autoComplete="off"
+            // autoComplete="off"
             onChange={handleTextChange}
             value={user.email}
           />
