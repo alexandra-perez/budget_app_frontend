@@ -26,7 +26,7 @@ export default function DonutChart({ transactions }) {
         data,
         backgroundColor: [
           '#FF6384',
-          '#36A2EB',
+          '#01CA57',
           '#FFCE56',
           '#4BC0C0',
           '#9966FF',
@@ -43,7 +43,7 @@ export default function DonutChart({ transactions }) {
           plugins: {
             title: {
               display: true,
-              text: 'Transactions',
+              text: 'By Category',
             },
           },
         }}

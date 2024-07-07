@@ -55,7 +55,7 @@ export default function Transactions() {
         <h1>Available Balance: ${balance.toFixed(2)}</h1>
       </div>{' '}
       <div className="data">
-        <h2>Budget Data</h2>
+        <h2>Total Transactions</h2>
         <DonutChart transactions={transactions} />
       </div>
     </div>

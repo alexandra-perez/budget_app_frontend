@@ -57,7 +57,7 @@ export default function CreateForm() {
             id="category"
             name="category"
             onChange={handleTextChange}
-            // required
+            required
           >
             <option value="">Select a category</option>
             <option value="Utilities">Utilities</option>
@@ -118,7 +118,7 @@ export default function CreateForm() {
             autoComplete="off"
           />
         </div>
-        <button onClick={handleSubmit}>Submit</button>
+        <button type='submit'>Submit</button>
       </form>
     </div>
   );

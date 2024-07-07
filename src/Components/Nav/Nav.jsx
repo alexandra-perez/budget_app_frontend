@@ -8,7 +8,7 @@ export default function Nav() {
         <Link to="/">
           <li>
             {' '}
-            <div className='logo'>
+            <div className="logo">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 height="20px"
@@ -29,7 +29,11 @@ export default function Nav() {
           <li>Add New Transaction</li>
         </Link>
         <Link to="/profile">
-        <li>Profile</li></Link>
+          <li>
+            <i class="fa-regular fa-user"></i>
+            Profile
+          </li>
+        </Link>
       </ul>
     </nav>
   );
