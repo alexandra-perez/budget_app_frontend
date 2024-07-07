@@ -25,7 +25,7 @@
     }
 
     .mobile_nav {
-        // display: none;
+        display: none;
         text-align: right;
     }
 
@@ -37,22 +37,27 @@
         display: block;
     }
 
-    @media (max-width: 480px) {
-        .desktop_nav {
-            display: none;
-        }
+@media (max-width: 480px) {
+    .Nav {
+        padding: 5px;
+    }
 
-        .mobile_nav {
-            display: flex;
-        }
+    .desktop_nav {
+        display: none;
+    }
 
-        .dropdown ul {
-            flex-direction: column;
-        }
+    .mobile_nav {
+        display: flex;
+    }
 
-        li:hover {
-            text-decoration: underline;
-            text-underline-offset: 5px;
-        }
+    .dropdown ul {
+        flex-direction: column;
+    }
+
+    li:hover {
+        text-decoration: underline;
+        text-underline-offset: 5px;
     }
 }
+}
+
