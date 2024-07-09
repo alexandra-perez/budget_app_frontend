@@ -11,6 +11,9 @@ Welcome to the Budget App Frontend repository! This project is the frontend comp
   - [Setup](#setup)
   - [Usage](#usage)
   - [Backend Repository](#backend-repository)
+  - [Project Requirements \& Stretch Goals](#project-requirements--stretch-goals)
+    - [Requirements](#requirements)
+    - [Stretch goals](#stretch-goals)
   - [Credits](#credits)
 
 ## Demo
@@ -22,7 +25,7 @@ Check out the live demo [here](https://getbudgetbuddy.netlify.app/).
 - **Category Visualization:** Visualize transactions by category.
 
 ## Technologies Used
-[![Technologies Used](https://skillicons.dev/icons?i=react,vite,express,js,html,css,sass&theme=dark)](https://skillicons.dev){:target="_blank"}
+[![Technologies Used](https://skillicons.dev/icons?i=react,vite,express,js,html,css,sass,netlify&theme=dark)](https://skillicons.dev){:target="_blank"}
 
 ## Setup
 To set up the project locally, follow these steps:
@@ -46,6 +49,14 @@ After setting up the project, you can use the following commands:
 
 ## Backend Repository
 You can find the backend repository for this project [here](https://github.com/alexandra-perez/budget_app_backend).
+
+## Project Requirements & Stretch Goals
+### [Requirements](https://github.com/10-6-pursuit/project-budgeting-app/blob/main/README.md)
+
+### Stretch goals
+- Transaction category visualization with Chart.js
+- Media queries for responsiveness
+- Profile feature for user customization
 
 ## Credits
 - Icons provided by [FontAwesome](https://fontawesome.com) and [Google Icons](https://fonts.google.com/icons)
