@@ -58,7 +58,7 @@ export default function Transactions({ user, setUser }) {
       </div>{' '}
       <div className="details">
         <div className="data">
-          <h2>My Budget Details</h2>
+          <h2>Transactions by Category</h2>
           <DonutChart transactions={transactions} />
         </div>
         <div className="insights">
