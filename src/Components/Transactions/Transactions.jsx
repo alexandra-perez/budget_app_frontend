@@ -51,7 +51,7 @@ export default function Transactions({ user, setUser }) {
       <div>
         <h1 className="total">
           Transaction(s) Total:{' '}
-          <span className={` ${total > user.monthlyBudget ? 'green' : 'red'}`}>
+          <span className={` ${total > user.monthlyBudget ? 'red' : 'green'}`}>
             ${parseFloat(total).toFixed(2)}
           </span>
         </h1>
@@ -62,9 +62,9 @@ export default function Transactions({ user, setUser }) {
           <DonutChart transactions={transactions} />
         </div>
         <div className="insights">
-          <h2>% Allocated vs Budget</h2>
+          <h2>Allocated vs Budget</h2>
           <p>
-            {total} spent of {user.monthlyBudget} budget
+            ${total.toFixed(2)} spent of ${user.monthlyBudget} budget
           </p>
         </div>
       </div>
