@@ -8,7 +8,7 @@ export default function Profile({ user, setUser }) {
 
   function handleSubmit(e) {
     e.preventDefault();
-    console.log(user);
+    // console.log(user);
   }
 
   return (
@@ -59,14 +59,6 @@ export default function Profile({ user, setUser }) {
             id="monthlyBudget"
             onChange={handleTextChange}
             value={user.monthlyBudget}
-          />
-          <label htmlFor="monthlyIncome">Monthly Income</label>
-          <input
-            type="number"
-            name="monthlyIncome"
-            id="monthlyIncome"
-            onChange={handleTextChange}
-            value={user.monthlyIncome}
           />
         </fieldset>
         <button onClick={handleSubmit}>Save</button>

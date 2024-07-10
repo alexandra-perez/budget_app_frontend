@@ -41,7 +41,7 @@ export default function Nav() {
         </Link>
         <Link to="/profile">
           <li>
-            <i class="fa-regular fa-user"></i>
+            <i className="fa-regular fa-user"></i>
             Profile
           </li>
         </Link>
@@ -59,7 +59,7 @@ export default function Nav() {
           </svg>
         </div>
         <div className="menu">
-          <i class="fa-solid fa-bars" onClick={(e) => handleClick(e)}></i>
+          <i className="fa-solid fa-bars" onClick={(e) => handleClick(e)}></i>
           <div className={`dropdown ${clicked ? 'visible' : 'hidden'}`}>
             <ul>
               <Link to="/transactions">

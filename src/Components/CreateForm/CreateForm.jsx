@@ -14,7 +14,7 @@ export default function CreateForm() {
   });
   const navigate = useNavigate();
 
-  function handleTextChange(e) {
+  function handleChange(e) {
     setCurrTransaction({
       ...currTransaction,
       [e.target.id]: e.target.value,
@@ -56,7 +56,7 @@ export default function CreateForm() {
           <select
             id="category"
             name="category"
-            onChange={handleTextChange}
+            onChange={handleChange}
             required
           >
             <option value="">Select a category</option>
@@ -80,7 +80,7 @@ export default function CreateForm() {
             id="item_name"
             type="text"
             value={currTransaction.item_name}
-            onChange={handleTextChange}
+            onChange={handleChange}
             required
             autoComplete="off"
           />
@@ -91,7 +91,7 @@ export default function CreateForm() {
             id="from"
             type="from"
             value={currTransaction.from}
-            onChange={handleTextChange}
+            onChange={handleChange}
             required
             autoComplete="off"
           />
@@ -102,7 +102,7 @@ export default function CreateForm() {
             id="amount"
             type="number"
             value={currTransaction.amount}
-            onChange={handleTextChange}
+            onChange={handleChange}
             required
             autoComplete="off"
           />
@@ -113,7 +113,7 @@ export default function CreateForm() {
             id="date"
             type="date"
             value={currTransaction.date}
-            onChange={handleTextChange}
+            onChange={handleChange}
             required
             autoComplete="off"
           />

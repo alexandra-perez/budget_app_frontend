@@ -16,7 +16,8 @@
         box-shadow: $boxShadow;
     }
 
-    th, td {
+    th,
+    td {
         padding: 5px 10px;
     }
 
@@ -29,16 +30,12 @@
         padding: 35px;
     }
 
-    .balance {
+    .total {
         text-align: right;
         padding: 5px;
         box-shadow: $boxShadow;
         bottom: 0;
         font-weight: 500;
-    }
-
-    .yellow {
-        color: rgb(198, 198, 17);
     }
 
     .red {
@@ -47,5 +44,16 @@
 
     .green {
         color: green;
+    }
+
+    .details {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+        padding: 20px;
+        box-shadow: $boxShadow;
+        margin: 3rem auto;
+        width: fit-content;
     }
 }

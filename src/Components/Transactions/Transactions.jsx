@@ -6,8 +6,8 @@ import './Transactions.scss';
 
 const API = import.meta.env.VITE_API_URL;
 
-export default function Transactions() {
-  let balance = 0;
+export default function Transactions({ user, setUser }) {
+  const [total, setTotal] = useState(0);
   const [transactions, setTransactions] = useState([]);
 
   useEffect(() => {
@@ -16,47 +16,57 @@ export default function Transactions() {
         return res.json();
       })
       .then((resJSON) => {
-        // console.log(resJSON);
         setTransactions(resJSON);
       });
   }, []);
+
+  useEffect(() => {
+    const sum = transactions.reduce(
+      (sum, curr) => Math.abs(+sum) + +Math.abs(+curr.amount),
+      0
+    );
+    setTotal(sum);
+  }, [transactions]);
 
   return (
     <div className="Transactions">
       <table>
         <thead>
           <tr>
+            <th>Date</th>
             <th>Transaction</th>
             <th>Category</th>
             <th>Merchant</th>
             <th>Amount</th>
-            <th>Date</th>
-            <th>Balance</th>
           </tr>
         </thead>
         <tbody>
           {transactions.map((transaction) => {
-            balance += parseFloat(transaction.amount);
             return (
-              <Transaction
-                key={transaction.id}
-                transaction={transaction}
-                balance={balance}
-              />
+              <Transaction key={transaction.id} transaction={transaction} />
             );
           })}
         </tbody>
       </table>
-      <div
-        className={`balance ${
-          balance > 100 ? 'green' : balance >= 0 ? 'yellow' : 'red'
-        }`}
-      >
-        <h1>Available Balance: ${balance.toFixed(2)}</h1>
+      <div>
+        <h1 className="total">
+          Transaction(s) Total:{' '}
+          <span className={` ${total > user.monthlyBudget ? 'green' : 'red'}`}>
+            ${parseFloat(total).toFixed(2)}
+          </span>
+        </h1>
       </div>{' '}
-      <div className="data">
-        <h2>Total Transactions</h2>
-        <DonutChart transactions={transactions} />
+      <div className="details">
+        <div className="data">
+          <h2>My Budget Details</h2>
+          <DonutChart transactions={transactions} />
+        </div>
+        <div className="insights">
+          <h2>% Allocated vs Budget</h2>
+          <p>
+            {total} spent of {user.monthlyBudget} budget
+          </p>
+        </div>
       </div>
     </div>
   );

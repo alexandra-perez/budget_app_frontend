@@ -3,9 +3,12 @@ import './Transaction.scss';
 
 const API = import.meta.env.VITE_API_URL;
 
-export default function Transaction({ transaction, balance }) {
+export default function Transaction({ transaction }) {
   return (
     <tr className="Transaction">
+      <td>
+        <Link to={`/transactions/${transaction.id}`}>{transaction.date}</Link>
+      </td>
       <td>
         <Link to={`/transactions/${transaction.id}`}>
           {transaction.item_name}
@@ -22,14 +25,6 @@ export default function Transaction({ transaction, balance }) {
       <td>
         <Link to={`/transactions/${transaction.id}`}>
           ${parseFloat(transaction.amount).toFixed(2)}
-        </Link>
-      </td>
-      <td>
-        <Link to={`/transactions/${transaction.id}`}>{transaction.date}</Link>
-      </td>
-      <td className="right">
-        <Link to={`/transactions/${transaction.id}`}>
-          ${parseFloat(balance).toFixed(2)}
         </Link>
       </td>
     </tr>

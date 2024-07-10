@@ -27,12 +27,15 @@ function App() {
   });
 
   return (
-    <div className='wrapper'>
+    <div className="wrapper">
       <Router>
         <Nav />
         <Routes>
           <Route path="/" element={<Home user={user} />} />
-          <Route path="/transactions" element={<Index />} />
+          <Route
+            path="/transactions"
+            element={<Index user={user} setUser={setUser} />}
+          />
           <Route path="/transactions/:id" element={<Show />} />
           <Route path="/new" element={<New />} />
           <Route path="/transactions/:id/edit" element={<Edit />} />
