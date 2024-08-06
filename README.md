@@ -47,6 +47,8 @@ To set up the project locally, follow these steps:
 After setting up the project, you can use the following commands:
 - `npm run dev`: Starts the development server
 
+**Note:** Make sure to start the backend server on Render first before running the frontend. You can access the backend server [here](https://budget-app-backend-bli6.onrender.com/).
+
 ## Backend Repository
 You can find the backend repository for this project [here](https://github.com/alexandra-perez/budget_app_backend).
 
